@@ -1,0 +1,148 @@
+:root {
+  --primary: #000;
+  --secondary: #6d6d6d;
+  --tertiary: #ebebeb;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.container,
+.main {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--tertiary);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.rrss:visited {
+  color: var(--primary);
+}
+
+.rrss__link img {
+  width: 10%;
+}
+
+.rrss__link {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.rrss__link--b {
+  cursor: auto;
+}
+
+@media only screen and (min-device-width: 20em) and (max-device-width: 48em) and (-webkit-min-device-pixel-ratio: 1) {
+  .main {
+    width: 90vw;    
+    flex-direction: column;
+  }
+
+  .a,
+  .b {
+    width: 100%;
+  }
+
+  .a {
+    padding: 8% 20% 8% 20%;
+  }
+
+  .title {
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .rrss__link p {
+    font-size: 0.8rem;
+    padding-left: 0.25rem;
+    margin: 0.75em 0 0.75em 0;
+  }
+
+  .b {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+}
+
+@media only screen and (min-device-width: 64em) {
+  .main {
+    width: 55em;
+    height: 30.938em;
+  }
+
+  .a {
+    width: 45%;
+    padding: 7% 12% 7% 12%;
+  }
+
+  .title {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .rrss__link p {
+    font-size: 0.9rem;
+    padding-left: 0.25rem;
+  }
+
+  .b {
+    width: 55%;
+  }
+
+  .principal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  }
+}
